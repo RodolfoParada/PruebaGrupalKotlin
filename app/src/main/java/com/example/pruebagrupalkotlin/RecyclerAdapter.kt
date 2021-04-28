@@ -52,16 +52,6 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
             itemView.setOnClickListener(View.OnClickListener {
                 Toast.makeText(context, "hola", Toast.LENGTH_SHORT).show()
-
-
-                //val intent: Intent = Intent(context,TeconCanela ::class.java)
-                //context.startActivity(intent)
-                // intent.putExtra("Imagenes", Imagen_Texto.get(position).Imagenes)
-                // intent.putExtra("Descripcion", Imagen_Texto.get(position).Descripcion)
-
-
-                //context.startActivity(intent)
-                // }
             })
         }
 

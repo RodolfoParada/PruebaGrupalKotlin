@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PruebaGrupalKotlin">
-        <activity android:name=".TeVerdeconLimon"></activity>
+        <activity android:name=".Comentario"></activity>
+        <activity android:name=".TeVerdeconLimon" />
         <activity android:name=".TeNegro" />
         <activity android:name=".TedeJengibre" />
         <activity android:name=".TeconMiel" />
