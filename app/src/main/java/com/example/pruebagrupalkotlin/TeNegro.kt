@@ -17,14 +17,11 @@ class TeNegro : AppCompatActivity() {
          override fun onCreate(savedInstanceState: Bundle?) {
              super.onCreate(savedInstanceState)
              setContentView(R.layout.activity_te_negro)
-             button3.setOnClickListener {
-                 val intent: Intent = Intent(this@TeNegro, Comentario::class.java)
-                 startActivity(intent);
+
 
              }
 
              }
-         }
 
 
 

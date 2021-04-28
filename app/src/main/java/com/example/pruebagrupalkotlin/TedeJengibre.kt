@@ -13,9 +13,6 @@ class TedeJengibre : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tede_jengibre)
 
-       button5.setOnClickListener {
-           val intent: Intent = Intent(this@TedeJengibre, Comentario::class.java)
-           startActivity(intent);
-       }
+
     }
 }

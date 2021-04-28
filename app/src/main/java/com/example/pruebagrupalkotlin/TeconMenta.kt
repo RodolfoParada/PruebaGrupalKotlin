@@ -13,9 +13,8 @@ class TeconMenta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tecon_menta)
 
-            button7.setOnClickListener {
-           val intent: Intent = Intent(this@TeconMenta, Comentario::class.java)
-           startActivity(intent);
+          //  button7.setOnClickListener {
+          // val intent: Intent = Intent(this@TeconMenta, Comentario::class.java)
+           // startActivity(intent);
        }
     }
-}

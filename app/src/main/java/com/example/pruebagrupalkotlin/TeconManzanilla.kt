@@ -13,9 +13,6 @@ class TeconManzanilla : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tecon_manzanilla)
 
-       button8.setOnClickListener {
-           val intent: Intent = Intent(this@TeconManzanilla, Comentario::class.java)
-           startActivity(intent);
-       }
+
     }
 }

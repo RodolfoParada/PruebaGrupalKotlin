@@ -13,9 +13,6 @@ class TeconCanela : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tecon_canela)
 
-       button.setOnClickListener {
-           val intent: Intent = Intent(this@TeconCanela, Comentario::class.java)
-           startActivity(intent);
-       }
+
     }
 }

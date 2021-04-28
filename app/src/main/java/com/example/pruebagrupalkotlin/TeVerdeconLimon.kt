@@ -13,10 +13,7 @@ class TeVerdeconLimon : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_te_verdecon_limon)
 
-      button4.setOnClickListener {
-          val intent: Intent = Intent(this@TeVerdeconLimon, Comentario::class.java)
-          startActivity(intent);
-      }
+
 
   }
 }

@@ -13,9 +13,6 @@ class TeconMiel : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tecon_miel)
 
-      button6.setOnClickListener {
-          val intent: Intent = Intent(this@TeconMiel, Comentario::class.java)
-          startActivity(intent);
-      }
+
     }
 }
