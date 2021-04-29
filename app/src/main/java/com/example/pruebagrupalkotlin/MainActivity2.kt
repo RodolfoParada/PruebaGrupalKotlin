@@ -51,8 +51,8 @@ import org.jetbrains.anko.uiThread
 
             fun addTask(task:TaskEntity){
                 doAsync {
-                    val id = MyTaskApp.database.taskDao().addTask(task) // <- Crea el registro (insert)
-                    val recoveryTask = MyTaskApp.database.taskDao().getTaskById(id) // <- Se recupera el task con ID
+                    val id = TaskApp.database.taskDao().addTask(task) // <- Crea el registro (insert)
+                    val recoveryTask = TaskApp.database.taskDao().getTaskById(id) // <- Se recupera el task con ID
 
                     uiThread {
                         tasks.add(recoveryTask)
