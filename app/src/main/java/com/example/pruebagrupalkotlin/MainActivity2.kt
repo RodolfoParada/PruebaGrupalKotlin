@@ -26,7 +26,7 @@ import org.jetbrains.anko.uiThread
                 tasks = mutableListOf()
                 //tasks = mutableListOf(TaskEntity(name="Inicio",isDone = false),TaskEntity(name="Inicio",isDone = false))
 
-                imagen = findViewById(R.id.imagen) as ImageView
+                imagen = findViewById(R.id.imagenes) as ImageView
                 texto = findViewById(R.id.texto) as EditText
 
 
@@ -43,7 +43,7 @@ import org.jetbrains.anko.uiThread
 
             fun setUpRecyclerView(tasks: List<TaskEntity>) {
                 adapter = TasksAdapter(tasks, { updateTask(it) }, {deleteTask(it)})
-                recyclerView = findViewById(R.id.rvTask)
+                recyclerView = findViewById(R.id.
                 recyclerView.setHasFixedSize(true)
                 recyclerView.layoutManager = LinearLayoutManager(this)
                 recyclerView.adapter = adapter

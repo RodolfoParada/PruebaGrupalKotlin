@@ -7,6 +7,6 @@ import androidx.room.PrimaryKey
 data class TaskEntity (
     @PrimaryKey(autoGenerate = true)
     var id:Int = 0,
-    var name:String = "",
+    var Imagenes:String = "",
     var isDone:Boolean = false
 )

@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import java.lang.reflect.Array.get
@@ -48,7 +49,7 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         fun bind(variedadete: VariedadesTe, context: Context) {
             NombreTe.text = variedadete.Tipo_te
             ImagenTe.loadUrl(variedadete.image)
-            z(context)
+
 
             itemView.setOnClickListener(View.OnClickListener {
                 Toast.makeText(context, "hola", Toast.LENGTH_SHORT).show()
@@ -58,49 +59,52 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         fun ImageView.loadUrl(url: String) {
             Picasso.with(context).load(url).into(this)
 
-        }
-
-        fun RecyclerAdapter(DescripcionImagenes: MutableList<Imagen_Texto>, context: TeconCanela) {
-
-        }
-
-        fun z( context: Context) {
             ImagenTe.setOnClickListener {
-                if (position == 0) {
-                    val intent: Intent = Intent(context, TeVerde::class.java)
-                    context.startActivity(intent)
-                }else if (position == 1) {
-                        val intent: Intent = Intent(context, TeNegro::class.java)
-                        context.startActivity(intent)
-
-                } else if (position == 2) {
-                    val intent: Intent = Intent(context, TeVerdeconLimon::class.java)
-                    context.startActivity(intent)
-                } else if (position == 3) {
-                    val intent: Intent = Intent(context, TedeJengibre::class.java)
-                    context.startActivity(intent)
-                } else if (position == 4) {
-                    val intent: Intent = Intent(context, TeconMiel::class.java)
-                    context.startActivity(intent)
-
-                } else if (position == 5) {
-                    val intent: Intent = Intent(context, TeconCanela::class.java)
-                    context.startActivity(intent)
-                } else if (position == 6) {
-                    val intent: Intent = Intent(context, TeconManzanilla::class.java)
-                    context.startActivity(intent)
-                } else if (position == 7) {
-                    val intent: Intent = Intent(context, TeconMenta::class.java)
-                    context.startActivity(intent)
-
-
-
-
-                }
+                val intent: Intent = Intent(context, MainActivity2::class.java)
+                context.startActivity(intent);
             }
-        }
 
+        }
     }
 }
+
+
+
+        /*    fun RecyclerAdapter(DescripcionImagenes: MutableList<Imagen_Texto>, context: TeconCanela) {
+
+            }
+
+            fun z( context: Context) {
+                ImagenTe.setOnClickListener {
+                    if (position == 0) {
+                        val intent: Intent = Intent(context, TeVerde::class.java)
+                        context.startActivity(intent)
+                    }else if (position == 1) {
+                            val intent: Intent = Intent(context, TeNegro::class.java)
+                            context.startActivity(intent)
+
+                    } else if (position == 2) {
+                        val intent: Intent = Intent(context, TeVerdeconLimon::class.java)
+                        context.startActivity(intent)
+                    } else if (position == 3) {
+                        val intent: Intent = Intent(context, TedeJengibre::class.java)
+                        context.startActivity(intent)
+                    } else if (position == 4) {
+                        val intent: Intent = Intent(context, TeconMiel::class.java)
+                        context.startActivity(intent)
+
+                    } else if (position == 5) {
+                        val intent: Intent = Intent(context, TeconCanela::class.java)
+                        context.startActivity(intent)
+                    } else if (position == 6) {
+                        val intent: Intent = Intent(context, TeconManzanilla::class.java)
+                        context.startActivity(intent)
+                    } else if (position == 7) {
+                        val intent: Intent = Intent(context, TeconMenta::class.java)
+                        context.startActivity(intent)
+
+
+    */
+
 
 
