@@ -52,7 +52,7 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
 
             itemView.setOnClickListener(View.OnClickListener {
-                Toast.makeText(context, "hola", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "", Toast.LENGTH_SHORT).show()
             })
         }
 
